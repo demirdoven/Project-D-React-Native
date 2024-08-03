@@ -7,7 +7,7 @@ const RootLayout = () => {
     <View className="flex-1 items-center justify-center bg-white">
       <Text className="text-3xl font-pblack">gttt oooooo</Text>
       <StatusBar style="auto" />
-      <Link href="/profile" style={{ color: 'blue', }} >Go go go</Link>
+      <Link href="/home" style={{ color: 'blue', }} >Go go go</Link>
     </View>
   )
 }
