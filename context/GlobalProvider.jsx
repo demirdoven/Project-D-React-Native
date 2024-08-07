@@ -23,7 +23,7 @@ const GlobalProvider = ({ children }) => {
             }
         })
         .catch( (error) => {
-            console.log(error)
+            console.log('globalprov. dosyasindan', error)
         })
         .finally( () => {
             setIsLoading(false)

@@ -9,12 +9,15 @@ import { useGlobalContext } from "../context/GlobalProvider";
 
 const App = () => {
 
-    const {isLoading, isLoggedIn} = useGlobalContext();
+    const {isLoading, isLoggedIn, user} = useGlobalContext();
 
-    if( ! isLoading && isLoggedIn ) return alert('evet')
-    // <Redirect href="/home" />
+    console.log('isLoading', isLoading)
+    console.log('isLoggedIn', isLoggedIn)
+    console.log('user', user)
 
-    console.log('ddd', isLoggedIn)
+    if (!isLoading && isLoggedIn){
+        return <Redirect href="/home" />
+    }
 
     return (
         <SafeAreaView className="bg-primary h-full">
